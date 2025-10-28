@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+@media (max-width:768px){
+    #apropos{
+        flex-direction: column !important;
+        justify-content: center !important;
+        gap: 10%;
+        
+    }
+
+    #apropos div{
+        width: 90%;
+    }
+
+    #apropos h2{
+        padding: 0;
+    }
+
+    .services_liste{
+        width: 100% !important;
+    }
+
+    #services{
+        height: auto !important;
+    }
+
+    .devis{
+        width: 100% !important;
+    }
+
+    .image{
+        height: 100% !important;
+    }
+
+    .image img{
+        min-height:465px;
+    }
+
+    .contact{
+        width: 100% !important;
+        height: auto;
+    }
+    .dessus_contact{
+        flex-direction: column;
+    }
+
+    .dessus_contact form{
+        padding-top:10% !important;
+    }
+}

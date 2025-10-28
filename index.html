@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motorah – Mécanique automobile à domicile (Rhône & Loire)</title>
+    <meta name="description" content="Motorah : entretien et réparation automobile à domicile ou sur site dans le Rhône et la Loire. Diagnostic, vidange, freins, pneus. Devis rapide et transparent." />
+    <meta name="keywords" content="mécanique auto, garage à domicile, réparation voiture, entretien, Rhône, Loire, devis, diagnostic, freins, pneus, vidange, Motorah" />
+    <meta name="author" content="Motorah" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <!-- Remplace par l’URL finale de prod -->
+    <link rel="canonical" href="https://www.motorah.fr/"/>
+  
+    <!-- Open Graph / Réseaux sociaux -->
+    <meta property="og:title" content="Motorah – Mécanique automobile Rhône & Loire" />
+    <meta property="og:description" content="Entretien & réparation auto à domicile. Intervention rapide, devis clair, service transparent." />
+    <meta property="og:type" content="website" />
+    <!-- Remplace par une image de partage en ligne -->
+    <meta property="og:image" content="https://www.motorah.fr/Images/logo_motorah.jpg" />
+    <meta property="og:url" content="https://www.motorah.fr/" />
+  
+    <!-- JSON-LD LocalBusiness (SEO local) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutomotiveBusiness",
+      "name": "Motorah",
+      "description": "Entretien et réparation automobile à domicile dans le Rhône & la Loire. Devis transparent et intervention rapide.",
+      "areaServed": ["Rhône", "Loire", "Rhône-Alpes"],
+      "telephone": "+33 7 66 56 70 37",
+      "email": "motorah.ez@gmail.com",
+      "url": "https://www.motorah.fr/",
+      "image": "https://www.motorah.fr/Images/logo_motorah.jpg",
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "08:00",
+        "closes": "19:00"
+      }]
+    }
+    </script>
+    <link rel="stylesheet" href="https://use.typekit.net/qoi4bky.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-KN8rJrUeL0CZx7ENnMZbRk+0Z1h5JgO3M6I1YzXYYz4E9QBrZMz6uZ5Zm8eZlP0Eo0OaTT6KprRqF2n7fHk7eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/57e3bd99b5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .active::after {
+        transform: scaleX(1) !important;
+      }
+    </style>
+  </head>
+  <body class="bg-[#050202]">
+    <section
+      id="accueil"
+      class="bg-cover bg-center bg-no-repeat w-[100vw] h-[100vh]"
+      style="background-image: url('Images/ULTIMATE\ GARAGE\ WORKSHOP.jpg')"
+    >
+      <div class="flex w-[100%] h-full bg-black/40 items-center">
+        <header
+          class="fixed z-[20] w-[100%] h-[129px] flex justify-between items-center bg-gradient-to-b from-black to-transparent top-0"
+        >
+          <div class="w-[252px] h-[129px]">
+            <img src="Images/logo_motorah copie2.png" alt="" />
+          </div>
+          <nav id="navbar" class="hidden md:flex text-white gap-2 md:gap-0 md:justify-center items-center absolute md:relative top-[80px] md:top-0 left-0 w-full md:w-auto bg-black/90 md:bg-transparent">
+            <a
+              class="nav-link font-[roboto] m-8 uppercase relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100"
+              href="#accueil"
+              >Accueil</a
+            >
+            <a
+              class="nav-link font-[roboto] m-8 uppercase relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100"
+              href="#apropos"
+              >À propos</a
+            >
+            <a
+              class="nav-link font-[roboto] m-8 uppercase relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100"
+              href="#services"
+              >Services</a
+            >
+
+            <a
+              class="nav-link font-[roboto] m-8 uppercase relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100"
+              href="#contact"
+              >Contact</a
+            >
+          </nav>
+          <!-- Bouton menu mobile -->
+          <button id="menu-btn" class="text-white text-3xl md:hidden mr-6">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </header>
+
+        <div class="pl-[30px] flex gap-[20px] flex-col">
+          <h1
+            class="font-[oswald] uppercase text-white text-5xl leading-normal"
+          >
+            La mécanique au service <br />de votre quotidien
+          </h1>
+          <p class="text-white font-[roboto] text-base font-light uppercase">
+            Secteur Loire - Rhône
+          </p>
+
+          <button
+            class="flex justify-between h-[41px] items-center gap-[10px] bg-white/30 pr-[10px] w-[270px]"
+          >
+            <span class="bg-[#FA4409] h-[41px] w-[20px]"></span>
+            <a class="font-[roboto] font-light text-white uppercase" href=""
+              >Demander un devis gratuit</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      id="apropos"
+      class="h-screen bg-[#050202] p-[20px] flex items-center relative z-[1] justify-between"
+    >
+      <p
+        class="absolute text-white text-right uppercase right-0 top-0 pt-[30px] pr-[40px]"
+      >
+        [à propos]
+      </p>
+      <h2 class="uppercase leading-[0.9] tracking-tight text-white pl-[30px]">
+        <span class="block text-white font-[oswald] text-7xl"> Pourquoi </span>
+        <span
+          class="block text-transparent font-[oswald] text-7xl [-webkit-text-stroke:2px_#ffffff]"
+        >
+          Nous Choisir&nbsp;?
+        </span>
+      </h2>
+
+      <div class="pr-[40px] w-[40%]">
+        <ul class="flex flex-col gap-[30px]">
+          <li class="text-white uppercase">
+            <i class="fa-solid fa-diamond mr-[20px]" style="color: #ff2700"></i>
+            Rapidité → intervention en 24h
+          </li>
+          <li class="text-white uppercase">
+            <i class="fa-solid fa-diamond mr-[20px]" style="color: #ff2700"></i>
+            Transparence → devis clair
+          </li>
+          <li class="text-white uppercase">
+            <i class="fa-solid fa-diamond mr-[20px]" style="color: #ff2700"></i>
+            Confiance → +10 ans d’expérience
+          </li>
+        </ul>
+        <button
+          class="flex justify-between h-[41px] items-center gap-[10px] bg-white/30 pr-[10px] w-[270px] mt-[10%]"
+        >
+          <span class="bg-[#FA4409] h-[41px] w-[20px]"></span>
+          <a class="font-[roboto] font-light text-white uppercase" href=""
+            >Demander un devis gratuit</a
+          >
+        </button>
+      </div>
+    </section>
+    <section
+      id="services"
+      class="h-screen bg-[#050202] flex justify-between flex-wrap"
+    >
+      <div class="services_liste bg-[#171717] w-[49%] h-[48%] p-[40px]">
+        <h2 class="text-white font-[oswald] text-5xl">Services</h2>
+        <ul class="pt-[20px] flex flex-col gap-[30px]">
+          <li>
+            <p class="text-white uppercase font-[roboto]">
+              Entretien & Vidange
+            </p>
+            <div class="flex flex-row justify-between">
+              <div class="w-[10%] h-[5px] bg-[#FA4409]"></div>
+              <div class="w-[85%] h-[5px] bg-[#565656]"></div>
+            </div>
+          </li>
+          <li>
+            <p class="text-white uppercase font-[roboto]">
+              Diagnostic éléctronique
+            </p>
+            <div class="flex flex-row justify-between">
+              <div class="w-[10%] h-[5px] bg-[#FA4409]"></div>
+              <div class="w-[85%] h-[5px] bg-[#565656]"></div>
+            </div>
+          </li>
+          <li>
+            <p class="text-white uppercase font-[roboto]">
+              Réparations mécaniques
+            </p>
+            <div class="flex flex-row justify-between">
+              <div class="w-[10%] h-[5px] bg-[#FA4409]"></div>
+              <div class="w-[85%] h-[5px] bg-[#565656]"></div>
+            </div>
+          </li>
+          <li>
+            <p class="text-white uppercase font-[roboto]">Pneus & Freins</p>
+            <div class="flex flex-row justify-between">
+              <div class="w-[10%] h-[5px] bg-[#FA4409]"></div>
+              <div class="w-[85%] h-[5px] bg-[#565656]"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class=" image w-[49%] h-[48%]">
+        <img
+          class="object-cover w-[100%] h-[100%]"
+          src="Images/ -42.jpg"
+          alt=""
+        />
+      </div>
+      <div class="image w-[49%] h-[48%]">
+        <img
+          class="object-cover w-[100%] h-[100%]"
+          src="Images/Rev.jpg"
+          alt=""
+        />
+      </div>
+      <div class="devis w-[49%] h-[48%] bg-[#171717] p-[30px]">
+        <p
+          class="font-[oswald] uppercase w-[100%] text-right text-base text-white"
+        >
+          [Services]
+        </p>
+        <h2
+          class="uppercase [-webkit-text-stroke:0.50px_#ffffff] block text-transparent text-8xl"
+        >
+          devis
+        </h2>
+        <p class="text-white font-[oswald] mt-[10px] text-4xl uppercase">
+          Avant toute réparation, un devis précis vous est présenté.
+        </p>
+      </div>
+    </section>
+    <div class="bg-[#050202] flex justify-center p-[10%]">
+      <p class="text-white font-[roboto] font-semibold text-center">
+        Passionné par la mécanique depuis plusieurs années, je propose mes
+        services de réparation et d’entretien automobile à domicile ou sur site.
+        Basé dans la région Rhône-Alpes, j’interviens principalement dans le
+        Rhône et la Loire. Mon objectif : vous offrir un service de proximité,
+        rapide et transparent, toujours accompagné d’un devis clair avant chaque
+        intervention.
+      </p>
+    </div>
+
+    <section
+      id="contact"
+      class="bg-cover bg-center bg-no-repeat w-[100vw] h-[100vh]"
+      style="background-image: url('Images/\ -43.jpg')"
+    >
+      <div class="dessus_contact flex w-[100%] h-full bg-black/40 items-center">
+        <div class="contact flex flex-col w-[50%] h-[100%] p-[60px]">
+          <h2
+            class="text-white uppercase text-8xl text-left font-[oswald] mb-[20%]"
+          >
+            contact
+          </h2>
+          <ul class="text-left flex flex-col gap-[50px]">
+            <li class="text-white text-3xl">
+              <i class="fa-solid fa-phone" style="color: #fa4409"></i> 07 66 56
+              70 37
+            </li>
+            <li class="text-white text-3xl">
+              <i class="fa-solid fa-envelope" style="color: #fa4409"></i>
+              motorah.ez@gmail.com
+            </li>
+          </ul>
+        </div>
+        <div class="contact  w-[50%] h-[100%] bg-black/80">
+          <form id="contactForm" novalidate class="space-y-4 p-[20%]">
+            <input
+              type="text"
+              name="website"
+              class="hidden"
+              tabindex="-1"
+              autocomplete="off"
+            />
+
+            <!-- Nom -->
+            <div>
+              <label for="nom" class="block text-lg font-medium">Nom</label>
+              <input
+                id="nom"
+                name="nom"
+                type="text"
+                required
+                class="text-white w-full bg-transparent border-0 border-b border-gray-400/70 focus:border-white focus:outline-none focus:ring-0 py-3"
+                placeholder="Nom"
+              />
+              <p
+                class="mt-2 text-sm text-red-400 hidden"
+                data-error-for="nom"
+              ></p>
+            </div>
+
+            <!-- Prénom -->
+            <div>
+              <label for="prenom" class="block text-lg font-medium"
+                >Prénom</label
+              >
+              <input
+                id="prenom"
+                name="prenom"
+                type="text"
+                required
+                class="text-white block w-full bg-transparent border-0 border-b border-gray-400/70 focus:border-white focus:outline-none focus:ring-0 py-3"
+                placeholder="Prénom"
+              />
+              <p
+                class="mt-2 text-sm text-red-400 hidden"
+                data-error-for="prenom"
+              ></p>
+            </div>
+
+            <!-- Téléphone -->
+            <div>
+              <label for="telephone" class="block text-lg font-medium"
+                >Numéro de téléphone</label
+              >
+              <input
+                id="telephone"
+                name="telephone"
+                type="tel"
+                inputmode="tel"
+                required
+                pattern="^(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}$"
+                class="text-white block w-full bg-transparent border-0 border-b border-gray-400/70 focus:border-white focus:outline-none focus:ring-0 py-3"
+                placeholder="Numéro de téléphone"
+              />
+              <p
+                class="mt-2 text-sm text-red-400 hidden"
+                data-error-for="telephone"
+              ></p>
+              <p class="mt-1 text-xs text-gray-400">
+                Format FR accepté : 06 12 34 56 78, 06.12.34.56.78 ou +33 6 12
+                34 56 78
+              </p>
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label for="message" class="block text-lg font-medium"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                minlength="10"
+                class="text-white block w-full bg-transparent border-0 border-b border-gray-400/70 focus:border-white focus:outline-none focus:ring-0 py-3 resize-y"
+                placeholder="Message"
+              ></textarea>
+              <p
+                class="mt-2 text-sm text-red-400 hidden"
+                data-error-for="message"
+              ></p>
+            </div>
+
+            <!-- Bouton type (barre orange + fond gris très transparent) -->
+
+            <button
+              type="submit"
+              class="flex justify-between h-[41px] items-center gap-[10px] bg-white/30 pr-[10px] w-[270px]"
+            >
+              <span class="bg-[#FA4409] h-[41px] w-[20px]"></span>
+              <span
+                class="font-[roboto] font-light text-white uppercase"
+                href=""
+                >Demander un devis gratuit</span
+              >
+            </button>
+            <!-- Zone d’état -->
+            <div id="formStatus" class="hidden mt-6 text-sm"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black text-white border-t border-white/10">
+      <div
+        class="max-w-7xl mx-auto px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-10"
+      >
+        <!-- Logo + présentation -->
+        <div class="flex flex-col gap-4">
+          <img
+            src="Images/logo_motorah copie2.png"
+            alt="Motorah Logo"
+            class="w-44"
+          />
+          <p class="text-sm text-gray-400 font-[roboto] leading-relaxed">
+            Spécialiste en mécanique automobile à domicile ou sur site — Rhône &
+            Loire.<br />
+            <span class="text-[#FA4409] font-semibold"
+              >Rapidité, transparence et confiance</span
+            >
+            depuis plus de 10 ans.
+          </p>
+        </div>
+
+        <!-- Liens rapides -->
+        <div>
+          <h3 class="text-lg uppercase font-[oswald] mb-4">Navigation</h3>
+          <ul class="space-y-2 text-gray-300 font-[roboto]">
+            <li>
+              <a href="#accueil" class="hover:text-[#FA4409] transition"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a href="#apropos" class="hover:text-[#FA4409] transition"
+                >À propos</a
+              >
+            </li>
+            <li>
+              <a href="#services" class="hover:text-[#FA4409] transition"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-[#FA4409] transition"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg uppercase font-[oswald] mb-4">Contact</h3>
+          <ul class="space-y-3 text-gray-300 font-[roboto]">
+            <li>
+              <i class="fa-solid fa-phone text-[#FA4409] mr-2"></i> 07 66 56 70
+              37
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope text-[#FA4409] mr-2"></i>
+              motorah.ez@gmail.com
+            </li>
+            <li class="flex space-x-4 mt-4">
+              <a href="#" class="hover:text-[#FA4409]"
+                ><i class="fa-brands fa-facebook text-xl"></i
+              ></a>
+              <a href="#" class="hover:text-[#FA4409]"
+                ><i class="fa-brands fa-instagram text-xl"></i
+              ></a>
+              <a href="#" class="hover:text-[#FA4409]"
+                ><i class="fa-brands fa-tiktok text-xl"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bas de page -->
+      <div
+        class="border-t border-white/10 py-4 text-center text-gray-500 text-sm font-[roboto]"
+      >
+        © <span id="year"></span> Motorah. Tous droits réservés.
+      </div>
+    </footer>
+
+    <script>
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (scrollY >= sectionTop - 80) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      (function () {
+        const form = document.getElementById("contactForm");
+        const statusEl = document.getElementById("formStatus");
+
+        // Helpers
+        const $error = (name) =>
+          document.querySelector(`[data-error-for="${name}"]`);
+        const setError = (input, msg) => {
+          input.setAttribute("aria-invalid", "true");
+          const el = $error(input.name);
+          if (el) {
+            el.textContent = msg;
+            el.classList.remove("hidden");
+          }
+        };
+        const clearError = (input) => {
+          input.removeAttribute("aria-invalid");
+          const el = $error(input.name);
+          if (el) {
+            el.textContent = "";
+            el.classList.add("hidden");
+          }
+        };
+
+        const validators = {
+          nom: (v) =>
+            v.trim().length >= 2
+              ? ""
+              : "Le nom doit comporter au moins 2 caractères.",
+          prenom: (v) =>
+            v.trim().length >= 2
+              ? ""
+              : "Le prénom doit comporter au moins 2 caractères.",
+          telephone: (v) => {
+            const re = /^(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}$/;
+            return re.test(v.trim())
+              ? ""
+              : "Numéro de téléphone français invalide.";
+          },
+          message: (v) =>
+            v.trim().length >= 10
+              ? ""
+              : "Le message doit contenir au moins 10 caractères.",
+        };
+
+        // Validation live
+        ["nom", "prenom", "telephone", "message"].forEach((name) => {
+          const input = form.elements[name];
+          input.addEventListener("input", () => {
+            const msg = validators[name](input.value);
+            if (msg) setError(input, msg);
+            else clearError(input);
+          });
+          input.addEventListener("blur", () => {
+            const msg = validators[name](input.value);
+            if (msg) setError(input, msg);
+            else clearError(input);
+          });
+        });
+
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          statusEl.className = "hidden mt-6 text-sm";
+          statusEl.textContent = "";
+
+          // Bouton (désactivation + état)
+          const submitBtn = form.querySelector('button[type="submit"]');
+          const originalBtnHTML = submitBtn ? submitBtn.innerHTML : "";
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.classList.add("opacity-70", "cursor-not-allowed");
+            submitBtn.innerHTML = '<span class="animate-pulse">Envoi…</span>';
+          }
+
+          // Vérif globale (client)
+          let hasError = false;
+          let firstInvalid = null;
+          for (const name of ["nom", "prenom", "telephone", "message"]) {
+            const input = form.elements[name];
+            const msg = validators[name](input.value);
+            if (msg) {
+              setError(input, msg);
+              hasError = true;
+              if (!firstInvalid) firstInvalid = input;
+            } else {
+              clearError(input);
+            }
+          }
+          if (hasError) {
+            statusEl.textContent = "Merci de corriger les champs indiqués.";
+            statusEl.className = "mt-6 text-sm text-red-400";
+            if (firstInvalid) firstInvalid.focus();
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.classList.remove("opacity-70", "cursor-not-allowed");
+              submitBtn.innerHTML = originalBtnHTML;
+            }
+            return;
+          }
+
+          // Payload (avec honeypot optionnel)
+          const payload = {
+            nom: form.nom.value.trim(),
+            prenom: form.prenom.value.trim(),
+            telephone: form.telephone.value.trim(),
+            message: form.message.value.trim(),
+            website: form.website ? form.website.value.trim() : "", // doit rester vide
+          };
+
+          try {
+            const res = await fetch("contact.php", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload),
+            });
+
+            // Si le serveur renvoie des erreurs précises (422)
+            if (res.status === 422) {
+              const data = await res.json().catch(() => ({}));
+              const errors = (data && data.errors) || {};
+              let first = null;
+              Object.entries(errors).forEach(([name, msg]) => {
+                const input = form.elements[name];
+                if (input) {
+                  setError(input, msg);
+                  if (!first) first = input;
+                }
+              });
+              statusEl.textContent =
+                data.message || "Merci de corriger les champs indiqués.";
+              statusEl.className = "mt-6 text-sm text-red-400";
+              if (first) first.focus();
+              throw new Error("Validation serveur");
+            }
+
+            if (!res.ok) throw new Error("Erreur serveur");
+            const data = await res.json();
+            if (!data.ok) throw new Error(data.message || "Erreur serveur");
+
+            // Succès
+            statusEl.textContent = "Merci ! Votre message a bien été envoyé.";
+            statusEl.className = "mt-6 text-sm text-emerald-400";
+            form.reset();
+          } catch (err) {
+            // Échec générique
+            if (!statusEl.textContent) {
+              statusEl.textContent =
+                "Désolé, l'envoi a échoué. Réessayez plus tard.";
+              statusEl.className = "mt-6 text-sm text-red-400";
+            }
+            // console.error(err); // utile en dev
+          } finally {
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.classList.remove("opacity-70", "cursor-not-allowed");
+              submitBtn.innerHTML = originalBtnHTML;
+            }
+          }
+        });
+      })();
+
+      // Année automatique
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // --- Menu burger ---
+const menuBtn = document.getElementById("menu-btn");
+const nav = document.getElementById("navbar");
+
+menuBtn.addEventListener("click", () => {
+  nav.classList.toggle("hidden");
+});
+    </script>
+  </body>
+</html>
